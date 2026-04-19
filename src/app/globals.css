@@ -1,26 +1,25 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+  
+  --color-brand-red: #B22222;
+  --color-brand-red-light: #C24444;
+  --color-brand-cream: #F5F5DC;
+  --color-brand-charcoal: #1C1C1C;
+  --color-brand-charcoal-light: #333333;
+  --color-brand-gold: #D4AF37;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-brand-cream/10 text-brand-charcoal;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 bg-brand-red text-white rounded-full font-bold transition-all hover:bg-brand-red-light shadow-lg hover:shadow-brand-red/30;
+  }
 }

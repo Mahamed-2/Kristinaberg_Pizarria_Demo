@@ -1,0 +1,72 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id        String   @id @default(cuid())
+  nameSv    String
+  nameEn    String
+  slug      String   @unique
+  recipes   Recipe[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Recipe {
+  id            String   @id @default(cuid())
+  categoryId    String
+  category      Category @relation(fields: [categoryId], references: [id])
+  nameSv        String
+  nameEn        String
+  descriptionSv String?
+  descriptionEn String?
+  basePrice     Float
+  image         String?
+  isPublished   Boolean  @default(false)
+  isPopular     Boolean  @default(false)
+  ingredients   RecipeIngredient[]
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Ingredient {
+  id        String   @id @default(cuid())
+  nameSv    String
+  nameEn    String
+  price     Float    @default(0)
+  type      IngredientType
+  recipes   RecipeIngredient[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model RecipeIngredient {
+  recipeId     String
+  recipe       Recipe     @relation(fields: [recipeId], references: [id])
+  ingredientId String
+  ingredient   Ingredient @relation(fields: [ingredientId], references: [id])
+  isStandard   Boolean    @default(true) // Whether it comes by default or is an extra
+
+  @@id([recipeId, ingredientId])
+}
+
+enum IngredientType {
+  BASE
+  CHEESE
+  TOPPING
+  SAUCE
+  EXTRA
+}
+
+model AdminUser {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  role      String   @default("ADMIN")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

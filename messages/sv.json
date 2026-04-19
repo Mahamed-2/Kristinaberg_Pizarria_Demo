@@ -1,0 +1,42 @@
+{
+  "Index": {
+    "title": "Välkommen till Kristineberg Pizzeria",
+    "description": "Borås godaste pizzor, lagade med kärlek.",
+    "cta": "Se Menyn",
+    "call_now": "Ring Nu",
+    "location": "Borås, Sverige"
+  },
+  "Menu": {
+    "title": "Vår Meny",
+    "customize": "Anpassa",
+    "add_to_cart": "Lägg i varukorgen",
+    "categories": {
+      "pizzas": "Pizzor Class 1-5",
+      "kebab": "Kebab & Grill",
+      "premium": "Italienska Pizzor",
+      "sides": "Tillbehör",
+      "drinks": "Dryck"
+    }
+  },
+  "Navbar": {
+    "home": "Hem",
+    "menu": "Meny",
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "admin": "Admin"
+  },
+  "Common": {
+    "currency": "SEK",
+    "language": "Språk"
+  },
+  "Contact": {
+    "address_label": "Adress",
+    "phone_label": "Telefon",
+    "hours_label": "Öppettider",
+    "address": "Lars Kaggsgatan 19, 504 42 Borås",
+    "phone": "033-13 25 38",
+    "hours_week": "Mån - Fre: 11:00 - 21:00",
+    "hours_weekend": "Lör - Sön: 12:00 - 21:00",
+    "call_now": "Ring Nu"
+  }
+}

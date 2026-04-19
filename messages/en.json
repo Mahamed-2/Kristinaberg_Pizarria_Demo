@@ -1,0 +1,42 @@
+{
+  "Index": {
+    "title": "Welcome to Kristineberg Pizzeria",
+    "description": "The best pizzas in Borås, made with love.",
+    "cta": "See Menu",
+    "call_now": "Call Now",
+    "location": "Borås, Sweden"
+  },
+  "Menu": {
+    "title": "Our Menu",
+    "customize": "Customize",
+    "add_to_cart": "Add to Cart",
+    "categories": {
+      "pizzas": "Pizzas Class 1-5",
+      "kebab": "Kebab & Grill",
+      "premium": "Italian Pizzas",
+      "sides": "Sides",
+      "drinks": "Drinks"
+    }
+  },
+  "Navbar": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About Us",
+    "contact": "Contact",
+    "admin": "Admin"
+  },
+  "Common": {
+    "currency": "SEK",
+    "language": "Language"
+  },
+  "Contact": {
+    "address_label": "Address",
+    "phone_label": "Phone",
+    "hours_label": "Opening Hours",
+    "address": "Lars Kaggsgatan 19, 504 42 Borås",
+    "phone": "033-13 25 38",
+    "hours_week": "Mon - Fri: 11:00 AM - 9:00 PM",
+    "hours_weekend": "Sat - Sun: 12:00 PM - 9:00 PM",
+    "call_now": "Call Now"
+  }
+}
