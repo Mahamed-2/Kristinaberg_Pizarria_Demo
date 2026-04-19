@@ -20,7 +20,7 @@ interface CartStore {
   isCartOpen: boolean;
   isCheckoutOpen: boolean;
   isTrackingOpen: boolean;
-  addItem: (item: Omit<CartItem, 'quantity'>) => void;
+  addItem: (item: Omit<CartItem, 'id' | 'quantity'>) => void;
   removeItem: (itemId: string) => void;
   updateQuantity: (itemId: string, quantity: number) => void;
   clearCart: () => void;
