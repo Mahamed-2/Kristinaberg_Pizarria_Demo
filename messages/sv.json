@@ -3,6 +3,8 @@
     "title": "Välkommen till Kristineberg Pizzeria",
     "description": "Borås godaste pizzor, lagade med kärlek.",
     "cta": "Se Menyn",
+    "cta_button": "Se Vår Meny",
+    "kids_cta": "Designa din egen pizza i Barnhörnan!",
     "call_now": "Ring Nu",
     "location": "Borås, Sverige"
   },

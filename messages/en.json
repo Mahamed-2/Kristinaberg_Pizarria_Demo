@@ -3,6 +3,8 @@
     "title": "Welcome to Kristineberg Pizzeria",
     "description": "The best pizzas in Borås, made with love.",
     "cta": "See Menu",
+    "cta_button": "View Our Menu",
+    "kids_cta": "Design your own pizza in the Kids Corner!",
     "call_now": "Call Now",
     "location": "Borås, Sweden"
   },
