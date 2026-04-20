@@ -85,30 +85,6 @@ export default function Home({
           </a>
         </div>
 
-        {/* Kids Corner CTA */}
-        <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           animate={{ opacity: 1, y: 0 }}
-           transition={{ delay: 1.5 }}
-           className="mt-16"
-        >
-          <Link 
-            href="/kids"
-            className="group relative inline-flex items-center gap-4 bg-white/50 backdrop-blur-sm px-8 py-4 rounded-3xl border-2 border-dashed border-brand-red/30 hover:border-brand-red/60 transition-all"
-          >
-            <div className="flex -space-x-3">
-              <div className="w-10 h-10 relative rounded-full border-2 border-white overflow-hidden bg-white">
-                <Image src="/kids/pepperoni.png" alt="pepperoni" fill className="object-contain p-1" />
-              </div>
-              <div className="w-10 h-10 relative rounded-full border-2 border-white overflow-hidden bg-white">
-                <Image src="/kids/mushroom.png" alt="mushroom" fill className="object-contain p-1" />
-              </div>
-            </div>
-            <span className="text-brand-charcoal font-bold tracking-tight group-hover:text-brand-red transition-colors">
-              {t('kids_cta')}
-            </span>
-          </Link>
-        </motion.div>
       </div>
     </main>
   );

@@ -31,7 +31,6 @@ export function Header() {
   const navLinks = [
     { href: '/', key: 'home' },
     { href: '/menu', key: 'menu' },
-    { href: '/kids', key: 'kids' },
     { href: '/#about', key: 'about' },
     { href: '/#contact', key: 'contact' }
   ];

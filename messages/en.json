@@ -4,7 +4,6 @@
     "description": "The best pizzas in Borås, made with love.",
     "cta": "See Menu",
     "cta_button": "View Our Menu",
-    "kids_cta": "Design your own pizza in the Kids Corner!",
     "call_now": "Call Now",
     "location": "Borås, Sweden"
   },
@@ -25,28 +24,8 @@
     "menu": "Menu",
     "about": "About Us",
     "contact": "Contact",
-    "admin": "Admin",
-    "kids": "Kids Corner"
+    "admin": "Admin"
   },
-  "Kids": {
-    "title": "Kids Corner - Design your own Pizza!",
-    "game_title": "Pizza Builder Game 🍕",
-    "score": "Score",
-    "subtitle": "Drag and drop your favorite ingredients on the pizza",
-    "add_to_cart": "Add to Basket",
-    "clear": "Clear All",
-    "choose_shape": "Choose Shape",
-    "description": "Kids Custom Pizza with: ",
-    "ingredients": {
-      "pepperoni": "Pepperoni",
-      "mushroom": "Mushrooms",
-      "olive": "Olives"
-    },
-    "shapes": {
-      "base": "Circle",
-      "star": "Star",
-      "heart": "Heart"
-    }
   },
   "Common": {
     "currency": "SEK",

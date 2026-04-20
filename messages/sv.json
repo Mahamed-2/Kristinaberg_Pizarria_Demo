@@ -4,7 +4,6 @@
     "description": "Borås godaste pizzor, lagade med kärlek.",
     "cta": "Se Menyn",
     "cta_button": "Se Vår Meny",
-    "kids_cta": "Designa din egen pizza i Barnhörnan!",
     "call_now": "Ring Nu",
     "location": "Borås, Sverige"
   },
@@ -25,28 +24,8 @@
     "menu": "Meny",
     "about": "Om oss",
     "contact": "Kontakt",
-    "admin": "Admin",
-    "kids": "Barnhörnan"
+    "admin": "Admin"
   },
-  "Kids": {
-    "title": "Barnhörnan - Designa din egen Pizza!",
-    "game_title": "Pizza Builder Game 🍕",
-    "score": "Poäng",
-    "subtitle": "Dra och släpp dina favoritingredienser på pizzan",
-    "add_to_cart": "Lägg i varukorgen",
-    "clear": "Rensa allt",
-    "choose_shape": "Välj form",
-    "description": "Barnens egen designade pizza med: ",
-    "ingredients": {
-      "pepperoni": "Pepperoni",
-      "mushroom": "Svamp",
-      "olive": "Oliver"
-    },
-    "shapes": {
-      "base": "Cirkel",
-      "star": "Stjärna",
-      "heart": "Hjärta"
-    }
   },
   "Common": {
     "currency": "SEK",
