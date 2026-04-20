@@ -69,21 +69,46 @@ export default function Home({
           {t('description')}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col sm:flex-row items-center gap-6 animate-in slide-in-from-bottom-10 duration-1000 delay-300">
           <Link
             href="/menu"
-            className="px-10 py-4 bg-brand-red text-white rounded-full font-bold text-lg hover:bg-brand-red-light transition-all shadow-lg hover:shadow-brand-red/40 transform hover:-translate-y-1"
+            className="px-10 py-5 bg-brand-red text-brand-cream rounded-full text-lg font-bold shadow-2xl shadow-brand-red/30 hover:scale-105 hover:bg-brand-red-dark transition-all"
           >
-            {t('cta')}
+            {t('cta_button')}
           </Link>
           <a
             href={`tel:${contactT('phone').replace(/\s/g, '')}`}
-            className="px-10 py-4 border-2 border-brand-charcoal text-brand-charcoal rounded-full font-bold text-lg hover:bg-brand-charcoal hover:text-white transition-all cursor-pointer flex items-center justify-center gap-3 transform hover:-translate-y-1"
+            className="flex items-center gap-3 px-10 py-5 bg-brand-charcoal text-white rounded-full text-lg font-bold shadow-2xl shadow-brand-charcoal/20 hover:scale-105 transition-all"
           >
-             <Phone className="w-5 h-5" />
-             {t('call_now')}
+            <Phone className="w-5 h-5" />
+            {contactT('call_now')}
           </a>
         </div>
+
+        {/* Kids Corner CTA */}
+        <motion.div
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ delay: 1.5 }}
+           className="mt-16"
+        >
+          <Link 
+            href="/kids"
+            className="group relative inline-flex items-center gap-4 bg-white/50 backdrop-blur-sm px-8 py-4 rounded-3xl border-2 border-dashed border-brand-red/30 hover:border-brand-red/60 transition-all"
+          >
+            <div className="flex -space-x-3">
+              <div className="w-10 h-10 relative rounded-full border-2 border-white overflow-hidden bg-white">
+                <Image src="/kids/pepperoni.png" alt="pepperoni" fill className="object-contain p-1" />
+              </div>
+              <div className="w-10 h-10 relative rounded-full border-2 border-white overflow-hidden bg-white">
+                <Image src="/kids/mushroom.png" alt="mushroom" fill className="object-contain p-1" />
+              </div>
+            </div>
+            <span className="text-brand-charcoal font-bold tracking-tight group-hover:text-brand-red transition-colors">
+              {t('kids_cta')}
+            </span>
+          </Link>
+        </motion.div>
       </div>
     </main>
   );
